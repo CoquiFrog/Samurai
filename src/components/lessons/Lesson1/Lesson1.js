@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import GoBack from '../../goback/GoBack'
 
 function Lesson1() {
     return (
         <div>
-            <h1>I am the samurai Lesson1</h1>
-            <Link to="/">
-                <li>Go Back</li>
-            </Link>
+            <div>I am Lesson1</div>
+            <GoBack/>
         </div>
     );
 }
