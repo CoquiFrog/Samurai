@@ -1,0 +1,43 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 66px;
+    width: 66px;
+    background-color: greenyellow
+}
+
+.toolbar__navigation {
+    display: flex;
+    height: 100%;
+    vertical-align: center;
+    padding: 0 .1rem;
+}
+
+.toolbar__logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.toolbar__navigation-items ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar__navigation-items li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.toolbar__navigation-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar__navigation-items a:hover,
+.toolbar__navigation-items a:active {
+    color: orangered
+}

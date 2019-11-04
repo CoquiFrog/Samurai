@@ -8,12 +8,10 @@ function SamuraiRouter() {
     return (
         <Router>
             <Switch>
-            <div>
                 test
                 <Route path="/" exact component={Home}/>
                 <Route path="/sidebar" component={Sidebar}/>
                 <Route path="/lesson1" component={Lesson1}/>
-            </div>
             </Switch>
         </Router>
     );

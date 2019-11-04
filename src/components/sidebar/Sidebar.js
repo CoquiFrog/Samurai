@@ -5,6 +5,7 @@ function Sidebar() {
     return (
         <div>
             <h1>I am the samurai sidebar</h1>
+            <h1>welcome: {JSON.stringify(process.env)}</h1>
             <GoBack/>
         </div>
     );
