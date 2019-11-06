@@ -1,13 +1,15 @@
 import React from 'react';
-import GoBack from '../goback/GoBack'
+import MetisMenu from 'react-metismenu';
+import { SIDEBAR_MENU1 } from '../../constants/sidebar-menus/sidebar-menu1/Sidebar-Menu1';
+import { SIDEBAR_MENU2 } from '../../constants/sidebar-menus/sidebar-menu2/Sidebar-Menu2';
+
+import './Sidebar.css';
 
 function Sidebar() {
     return (
-        <div>
-            <h1>I am the samurai sidebar</h1>
-            <h1>welcome: {JSON.stringify(process.env)}</h1>
-            <GoBack/>
-        </div>
+    <div>
+        <MetisMenu content={SIDEBAR_MENU2} />
+    </div>
     );
 }
 

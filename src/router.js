@@ -8,7 +8,6 @@ function SamuraiRouter() {
     return (
         <Router>
             <Switch>
-                test
                 <Route path="/" exact component={Home}/>
                 <Route path="/sidebar" component={Sidebar}/>
                 <Route path="/lesson1" component={Lesson1}/>
