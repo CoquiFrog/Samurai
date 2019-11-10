@@ -10,7 +10,7 @@ function Home() {
     return (
         <div>
         {/* style marginLeft is here for Sidebar */}
-        <div class="sidebar"><Sidebar /></div>
+        <div className="sidebar"><Sidebar /></div>
             
             <img src={logo} className="App-logo" alt="logo" />
             <p>

@@ -4,3 +4,18 @@
     left: 0;
     width: 200px;
 }
+
+.donkey {
+    background-color: green !important;
+    color: green !important;
+    width: 300px !important;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
