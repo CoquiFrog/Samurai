@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../Katana.svg';
 
-
+import Hamburger from '../hamburger/Hamburger'
 import Sidebar from '../sidebar/Sidebar';
 
+import './Home.css';
+
 function Home() {
+    const [hidden, setHidden] = useState('shown');
     return (
         <div>
-        {/* style marginLeft is here for Sidebar */}
-        <div className="sidebar"><Sidebar /></div>
-            
+            <p>Currently: {JSON.stringify(hidden)} </p>
+            <Hamburger setHidden={setHidden} hidden={hidden}></Hamburger>
+            <div className="sidebar"><Sidebar setHidden={setHidden} hidden={hidden}/></div>
             <img src={logo} className="App-logo" alt="logo" />
             <p>
             I will soon be a coding samurai...

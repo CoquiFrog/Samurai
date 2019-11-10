@@ -6,16 +6,11 @@ import { SIDEBAR_MENU2 } from '../../constants/sidebar-menus/sidebar-menu2/Sideb
 
 import './Sidebar.css';
 
-function Sidebar() {
-    const [hidden, setHidden] = useState('shown');
+function Sidebar(props) {
     return (
         <div>
-            <div>hi</div>
-            <p>Currently: {JSON.stringify(hidden)} </p>
-                <div>
-                </div>
-            <Outside setHidden={setHidden} hidden={hidden}>
-                <div className={hidden}>
+            <Outside setHidden={props.setHidden} hidden={props.hidden}>
+                <div className={props.hidden}>
                     <MetisMenu content={SIDEBAR_MENU2} />
                 </div>
             </Outside>
